@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+from src.transfer import main
+from src.args import parse_args
+
+
+def start_project() -> int:
+    parse_args()
+
+    return main()
+
+
+if __name__ == "__main__":
+    exit(start_project())
